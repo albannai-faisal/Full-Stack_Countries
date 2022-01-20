@@ -1,0 +1,34 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-icon {
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  margin: 40px;
+}
+
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 30px !important;
+  }
+}

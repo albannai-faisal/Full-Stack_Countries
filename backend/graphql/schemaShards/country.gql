@@ -1,0 +1,39 @@
+scalar Languages
+
+type Name {
+  common: String,
+  official: String
+}
+
+type Language {
+  key: String,
+  value: String
+}
+
+type Flag {
+  svg: String
+}
+
+type Country {
+  id: ID,
+  name: Name,
+  cca3: String,
+  independent: Boolean,
+  unMember: Boolean,
+  capital: [String],
+  region: String,
+  subregion: String,
+  languages: Languages,
+  latlng: [Float],
+  landlocked: Boolean,
+  borders: [String],
+  area: Float,
+  population: Int,
+  flags: Flag
+}
+
+type Query {
+  getCountriesBasic: [Country],
+  getCountriesNames(cca3: [String]!): [Country],
+  getCountryDetail(cca3: String!): Country,
+}

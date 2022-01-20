@@ -1,0 +1,16 @@
+<div class="mat-app-background">
+  <mat-toolbar color="primary">
+    <a routerLink="/">
+      <h1 color="primary">Countries Around The World</h1>
+    </a>
+
+    <span class="spacer"></span>
+    <mat-icon>light_mode</mat-icon>
+    <mat-slide-toggle [formControl]="toggleControl"></mat-slide-toggle>
+    <mat-icon>dark_mode</mat-icon>
+  </mat-toolbar>
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

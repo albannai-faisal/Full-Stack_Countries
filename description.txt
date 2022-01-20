@@ -1,0 +1,13 @@
+Full Stack Task 
+
+We want you to create a simple website for display country data. You will use the public API; https://restcountries.eu/and the attached designs to accomplish this.
+On the frontend, you'll need to create a website using your preferred JS framework that will consume data from your backend to display a list of countries with very basic data about each. The user should be able to search for a country using the input field and also filter the countries by region.
+The website should be fully responsive to work on all screen size.
+Don't worry about implementing the dark mode toggle, but we'll be impressed if you do!
+On the backend, we want to consume the public API, but we don't want to unnecessarily make more requests to the API than we need to (imagine it has a small usage quota). Therefore, create a middleware/backend that makes the requests to the public API and then caches the data for an amount of time that you think is recommended.
+
+Frontend Extension Task
+Allow the user to click on a country to see more details about it. This should navigate to another page for that country with further details, and also links to each of the countries border countries.
+
+Backend Extension Task
+Create a NoSQL data model that would represent a continent or states/province/region or city (you can choose one of them)

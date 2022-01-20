@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+
+  & img {
+    margin-left: 30px;
+    vertical-align: middle;
+    width: 100px;
+    height: 60px;
+  }
+
+  & h1 {
+    display: inline;
+  }
+}
+
+.details {
+
+  text-align: center;
+
+  h3 {
+    text-decoration: underline;
+  }
+
+  .facts, .borders, .languages {
+    &> p, a {
+      margin: 0px;
+    }
+  }
+
+  hr {
+    display: block;
+    margin: 10px 0 10px 0;
+    border: 1px solid;
+    width: 30% !important;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+}

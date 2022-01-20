@@ -1,0 +1,70 @@
+.mat-form-field {
+  margin: 20px;
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  width: 15%;
+}
+
+:host ::ng-deep .mat-sort-header-container {
+  display: flex;
+  justify-content: right;
+}
+
+.mat-cell {
+  text-align: right !important;
+  justify-content: right !important;
+
+  &.no-data {
+    text-align: center !important;
+  }
+}
+
+
+// CSS responses to different screen sizes
+
+@media screen and (max-width: 320px) {
+
+  .mat-form-field {
+    width: 100%;
+    &.region {
+      width: 100%;
+    }
+  }
+
+  th, td {
+    font-size: 8px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .mat-form-field{
+    width: 90%;
+    &.region {
+      width: 90%;
+    }
+  }
+
+  th, td {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .mat-form-field{
+    width: 40%;
+    &.region {
+      width: 30%;
+    }
+  }
+
+}
